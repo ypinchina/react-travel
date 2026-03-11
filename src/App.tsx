@@ -1,23 +1,21 @@
-// 修改 App.tsx
-import React from "react";
-import logo from "./logo.svg";
 import style from "./App.module.css";
-import { Layout, Typography, Input } from 'antd'
-const { Header } = Layout
-
+import { Headers, Footers } from "./components";
+import { Row, Col } from "antd";
 function App() {
   return (
     <div className={style.App}>
-      <Layout>
-        <Header className={style.Header}>
-          <img src={logo} alt="" className={style['App-logo']} />
-          <Typography.Title level={3} className={style.Title}>React 旅游网</Typography.Title>
-          <Input.Search 
-            placeholder="请输入旅游目的地、主题、或关键字" 
-            className={style.Search}
-          />
-        </Header>
-      </Layout>
+      <Headers />
+      <div className={style["page-content"]}>
+        <Row style={{ marginTop: 20 }}>
+          <Col span={6}>
+            <div style={{backgroundColor: 'blue'}}>多重菜单</div>
+          </Col>
+          <Col span={18}>
+            <div style={{backgroundColor: 'red'}}>走马灯</div>
+          </Col>
+        </Row>
+      </div>
+      <Footers />
     </div>
   );
 }

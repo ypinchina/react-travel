@@ -2,43 +2,9 @@
 .App {
   background-color: rgba(0, 0, 0, 0.08);
 }
-
-.Header {
-  display: flex;
-  align-items: center;
-  height: 64px;
-  padding: 0 24px;
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.App-logo {
-  height: 40px;
-  margin-right: 16px;
-  pointer-events: none;
-}
-
-.Title {
-  margin: 0;
-  font-size: 20px;
+.page-content {
   flex: 1;
-}
-
-.Search {
-  width: 300px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  width: 80%;
+  height: 78vh;
+  margin: 0 auto;
 }

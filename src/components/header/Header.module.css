@@ -1,0 +1,75 @@
+.Header {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0 24px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.App-logo {
+  height: 40px;
+  margin-right: 16px;
+  pointer-events: none;
+}
+.app-header {
+  background-color: #fff;
+}
+.top-header {
+  height: 50px;
+  padding-left: 4%;
+  padding-right: 4%;
+  display: flex;
+  background-color: #f5f5f5;
+  line-height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.button-group {
+  float: right;
+}
+.main-header {
+  background-color: #fff;
+  height: 60px;
+  line-height: 60px;
+  width: 88%;
+}
+.main-menu {
+  padding: 0 6%;
+  background-color: #1976d2;
+}
+
+.main-menu :global(.ant-menu-item),
+.main-menu :global(.ant-menu-item-selected),
+.main-menu :global(.ant-menu-item a) {
+  color: #fff !important;
+}
+
+.main-menu :global(.ant-menu-item:hover),
+.main-menu :global(.ant-menu-item-selected:hover) {
+  color: #fff !important;
+}
+.Title {
+  margin: 0;
+  font-size: 20px;
+  flex: 1;
+}
+
+.Search {
+  width: 300px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
